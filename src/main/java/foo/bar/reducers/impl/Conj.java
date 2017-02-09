@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by jasgrant on 07/02/2017.
+ * Created by jang on 07/02/2017.
  */
 public class Conj<X> implements ReducingOperation<List<X>, X> {
     public List<X> apply(List<X> acc, X item) {
@@ -16,4 +16,6 @@ public class Conj<X> implements ReducingOperation<List<X>, X> {
         result.add(item);
         return result;
     }
+
+    public static <T> Conj<T> conj() { return new Conj<>(); }
 }

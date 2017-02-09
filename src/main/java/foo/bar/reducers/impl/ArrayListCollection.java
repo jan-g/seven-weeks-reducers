@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by jasgrant on 07/02/2017.
+ * Created by jang on 07/02/2017.
  */
 public class ArrayListCollection<X> extends ArrayList<X> implements Reducible<X> {
 
